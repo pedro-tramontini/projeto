@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box ;
+  box-sizing: border-box;
 }
 
 :root {
@@ -10,7 +10,7 @@
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
-  --highlight-color: rgba(255,255,255,0.2);
+  --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(assets/assets/moon-stars.svg);
 }
 
@@ -19,7 +19,7 @@
   --bg-url: url(assets/assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
-  --surface-color-hover: rgba(0,0,0,0.02);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(assets/assets/sun.svg);
 }
@@ -35,13 +35,12 @@ body * {
   font-style: normal;
 }
 
-
 #container {
-  width: 360px;
-  margin: 56px auto 0px;  
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
   padding: 0 24px;
 }
-
 
 /*
   Existem alguns atributos que não podem ser aplicados à objetos inline, como o (margin: auto;)
@@ -61,11 +60,11 @@ body * {
   position: relative;
   width: 64px;
 
-  margin: 4px auto ;
+  margin: 4px auto;
 }
 
 /* switch */
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
@@ -81,7 +80,7 @@ body * {
 
 .light #switch button {
   right: 0;
-  left : initial;
+  left: initial;
 }
 
 #switch span {
@@ -93,8 +92,6 @@ body * {
   backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
-
-
 
 p {
   font-weight: 500;
@@ -113,11 +110,11 @@ ul {
   padding: 24px 0;
 }
 
-ul li a{
+ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   padding: 16px 24px;
 
   background: var(--surface-color);
@@ -139,7 +136,7 @@ ul li a:hover {
 /*Social Links*/
 
 #social-links {
-  display: flex;  
+  display: flex;
   padding: 24px 0;
   align-items: center;
   justify-content: center;
@@ -147,7 +144,7 @@ ul li a:hover {
   font-size: 24px;
 }
 
-#social-links a { 
+#social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,4 +162,3 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-
